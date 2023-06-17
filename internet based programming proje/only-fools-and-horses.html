@@ -9,38 +9,49 @@
       h1 {
         color: darkgreen;
       }
-      a {
-        color: darkgreen;
-      }
       p {
+        border: 2px solid darkgreen;
         color: darkgreen;
+        padding: 5px;
+      }
+      img {
+        width: 300px;
+        float: left;
+        margin-right: 10px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
       }
     </style>
   </head>
   <body>
     <h1>Only Fools And Horses</h1>
-    <p>
-      <img src="only fools and horses.jpg" alt="" width="200" height="300" />
-      <div id="blogs">
+    <p class="clearfix">
       <i>
-        Comedy that follows two brothers from London's rough Peckham estate as they wheel and deal through a number of dodgy deals and search for the big score that'll make them millionaires.</i
+        <img src="only fools and horses.jpg" alt="" />
+
+        Comedy that follows two brothers from London's rough Peckham estate as
+        they wheel and deal through a number of dodgy deals and search for the
+        big score that'll make them millionaires.</i
       >
-      </div>
     </p>
+
     <a href="https://www.youtube.com/watch?v=-i-zO_mg6z0"
       >Only Fools And Horses Trailer</a
     >
     <h3>Similar Movies</h3>
-    <table celspacing="20">
+    <table celspacing="10">
       <tr>
         <td>
-          <img src="firefly.jpeg" width="150" alt="">
+          <img src="firefly.jpeg" width="50" alt="" />
         </td>
         <td>
-          <img src="the office.jpg" width="150" alt="">
+          <img src="the office.jpg" width="50" alt="" />
         </td>
         <td>
-          <img src="game of thrones.jpg" width="150" alt="">
+          <img src="game of thrones.jpg" width="50" alt="" />
         </td>
       </tr>
     </table>
