@@ -5,164 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>blacklights</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-      p {
-        color: rgb(249, 203, 227);
-        text-align: center;
-        padding: 20px;
-        border-top: 2px solid rgb(249, 203, 227);
-        border-right: 2px solid rgb(249, 203, 227);
-        border-left: 2px solid rgb(249, 203, 227);
-        border-bottom: 2px solid rgb(249, 203, 227);
-        border-radius: 5px;
-      }
-      a {
-        color: rgb(255, 179, 194);
-        text-align: center;
-      }
-
-      nav {
-        padding-left: 50px;
-        display: flex;
-        justify-content: space-between;
-      }
-      body {
-        background-color: rgb(68, 17, 45);
-        
-        font-family: 'Josefin Sans', sans-serif;
-      }
-      /*!base css end*/
-
-      /*!navbar start*/
-      .logo{
-        color: rgb(255, 179, 194);
-        font-size 30px;
-      }
-      #first {
-        background-color: aqua;
-      }
-      .navbar{
-        background-color: black;
-        height: 60px;
-        color: white;
-        position: sticky;
-        top: 0;
-      }
-      .navbar-wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        padding: 0 50px;
-      }
-      .menu-list{
-        display: flex;
-        list-style: none;
-        column-gap: 30px;
-      }
-      .menu-list-item{
-        cursor: pointer;
-      }
-      .menu-list-item:hover{
-        font-weight: bold;
-      }
-      .menu-list-item.active{
-        font-weight: bold;
-      }
-      .profile-container{
-        display: flex;
-        align-items: center;
-        column-gap: 20px;
-      }
-
-      .profile-picture{
-        width: 32px;
-        height: 32px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-      .profile-text-container{
-        display: flex;
-        align-items: center;
-        column-gap: 5px;
-        line-height: 1;
-      }
-      .toggle{
-        width: 40px;
-        background-color: white;
-        height: 20px;
-        border-radius: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .toggle-icon{
-        color: goldenrod;
-      }
-      .toggle-ball{
-        width: 18px;
-        height: 18px;
-        background-color: black;
-        border-radius: 50%;
-        cursor: pointer;
-        position: absolute;
-        right: 1px;
-      }
-      /*!navbar end*/
-
-      /*!sidebar start*/
-      .sidebar{
-        background-color: black;
-        color: white;
-        height: 100%;
-        width: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding top: 60px;
-        row-gap: 40px;
-        position: fixed;
-      }
-      .sidebar i{
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-      }
-      /*!featured start*/
-      .featured-content{
-        background-color: url("breakingbad.jpg");
-        padding: 50px;
-        height: calc(100vh- 60px );
-        background-size: 100% 100%;
-      }
-      /*!featured end*/
-      .content-wrapper{
-        margin-left: 50px;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--!navbar start-->
     <div class="navbar">
       <div class="navbar-wrapper">
         <div class="logo-wrapper">
-          <h1 class="logo">Logo</h1>
+          <h1 class="logo">Blacklights</h1>
         </div>
         <div class="menu-container">
           <ul class="menu-list">
-            <li class="menu-list-item active">Ana Sayfa</li>
-            <li class="menu-list-item">Filmler</li>
-            <li class="menu-list-item">Diziler</li>
-            <li class="menu-list-item">Listem</li>
-            <li class="menu-list-item">Popüler</li>
+            <li class="menu-list-item active">Home</li>
+            <li class="menu-list-item">TV Series</li>
+            <li class="menu-list-item">New</li>
+            <li class="menu-list-item">Popular</li>
           </ul>
         </div>
         <div class="profile-container">
-          <img class="profile-picture" src="sherlock.jpg" alt="">
+          <img class="profile-picture" src="sherlock.jpg" alt="" />
           <div class="profile-text-container">
-            <span class="profile-text">Hesabım</span>
+            <span class="profile-text">Account</span>
             <i><i class="bi bi-chevron-down"></i></i>
           </div>
           <div class="toggle">
@@ -187,28 +54,97 @@
     </div>
     <!--!sidebar end-->
 
+    <p style="font-size: x-large">
+      <b
+        ><i> Hello serial lovers. Turn on black lights. TV series begins!</i></b
+      >
+    </p>
+
     <!--featured content start-->
-    <div class="container">
-      <div class="content-wrapper">
-        <div class="featured-content"></div>
-        <img class="featured-title" src="breakingbad.jpg" alt="">
-        <p class="featured-desc">Created by Vince Gilligan, the series follows the exploits of Walter
-          White, a modest high school chemistry teacher, who discovers a new
-          purpose in life when he learns he has terminal cancer and turns to a
-          life of crime to provide for his family.</p>
-          <div class="featured-buttons">
-            <button class="play-button">
-              <i class="bi bi-play-circle"></i>
-              Oynat
-            </button>
-            <button class="info-button">
-              <i class="bi bi-info-circle"></i>
-              Daha Fazla Bilgi
-            </button>
-          </div>
+
+    <div class="movie-list-filter">
+      <select>
+        <option>Horror Series</option>
+        <option>Comedy Series</option>
+        <option>Drama Series</option>
+        <option>Action Series</option>
+        <option>Documentary Series</option>
+        <option>Anime Series</option>
+        <option>Asian Series</option>
+        <option>Children's TV Series</option>
+        <option>Turkish Series</option>
+      </select>
+    </div>
+
+    <!--featured content end-->
+
+    <!--movie list start-->
+    <div class="movie-list-container">
+      <h1 class="movie-list-title">Top 10 TV Series on imdb</h1>
+      <div class="movie-list-wrapper">
+        <ul class="movie-list">
+          <li class="movie-item">
+            <a href="the-office.html">
+              <img class="movie-item-img" src="the office.jpg" alt="" />
+            </a>
+            <div class="movie-item-info">
+              <span class="movie-item-title">The Office</span>
+            </div>
+          </li>
+          <li class="movie-item">
+            <a href="sherlock.html">
+              <img class="movie-item-img" src="sherlock.jpg" alt="" />
+            </a>
+          </li>
+          <li class="movie-item">
+            <a href="band-of-brothers.html">
+              <img class="movie-item-img" src="band of brothers.jpg" alt="" />
+            </a>
+          </li>
+          <li class="movie-item">
+            <a href="breaking-bad.html">
+              <img class="movie-item-img" src="breakingbad.jpg" alt="" />
+            </a>
+          </li>
+          <li class="movie-item">
+            <a href="chernobyl.html">
+              <img class="movie-item-img" src="Chernobyl.jpg" alt="" />
+            </a>
+          </li>
+          <li class="movie-item">
+            <a href="firefly.html">
+              <img class="movie-item-img" src="firefly.jpeg" alt="" />
+            </a>
+          </li>
+          <li class="movie-item">
+            <a href="game-of-thrones.html">
+              <img class="movie-item-img" src="game of thrones.jpg" alt="" />
+            </a>
+          </li>
+          <li class="movie-item">
+            <a href="the-sopranos.html">
+              <img class="movie-item-img" src="the sopranos.jpg" alt="" />
+            </a>
+          </li>
+          <li class="movie-item">
+            <a href="the-wire.html">
+              <img class="movie-item-img" src="the wire.jpg" alt="" />
+            </a>
+          </li>
+          <li class="movie-item">
+            <a href="only-fools-and-horses.html">
+              <img
+                class="movie-item-img"
+                src="only fools and horses.jpg"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+        <i class="bi bi-chevron-right arrow"></i>
       </div>
     </div>
-    <!--featured content end-->
+    <!--movie list end-->
     <header>
       <nav>
         <a href="horrorSeries.html">Horror Series</a>
@@ -234,47 +170,6 @@
         <a href="turkishSeries.html">Turkish Series</a>
       </nav>
     </header>
-
-    <p style="font-size: x-large">
-      <b><i> Hello serial lovers. Turn on black lights.TV series begins!</i></b>
-    
-    <h1>Top 10 TV Series on imdb</h1>
-    <a href="breaking-bad.html">
-      <img
-        src="breakingbad.jpg"
-        id="first"
-        width="200"
-        height="300"
-        alt="breaking bad"
-      />
-    </a>
-    <a href="band-of-brothers.html">
-      <img src="band of brothers.jpg" width="200" height="300" alt=""
-    /></a>
-    <a href="chernobyl.html">
-      <img src="Chernobyl.jpg" width="420" height="300" alt="" />
-    </a>
-    <a href="the-wire.html">
-      <img src="the wire.jpg" width="420" height="300" alt="" />
-    </a>
-    <a href="the-sopranos.html">
-      <img src="the sopranos.jpg" width="220" height="300" alt=""
-    /></a>
-    <a href="game-of-thrones.html">
-      <img src="game of thrones.jpg" width="250" height="300" alt=""
-    /></a>
-    <a href="sherlock.html">
-      <img src="sherlock.jpg" width="210" height="300" alt="" />
-    </a>
-    <a href="the-office.html">
-      <img src="the office.jpg" width="350" height="300" alt="" />
-    </a>
-    <a href="firefly.html">
-      <img src="firefly.jpeg" width="300" height="300" alt="" />
-    </a>
-    <a href="only-fools-and-horses.html">
-      <img src="only fools and horses.jpg" width="350" height="300" alt=""
-    /></a>
-    </p>
+    <script src="script.js"></script>
   </body>
 </html>

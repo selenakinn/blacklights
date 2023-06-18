@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+p {
+  color: rgb(249, 203, 227);
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid rgb(249, 203, 227);
+  border-right: 2px solid rgb(249, 203, 227);
+  border-left: 2px solid rgb(249, 203, 227);
+  border-bottom: 2px solid rgb(249, 203, 227);
+  border-radius: 5px;
+}
+a {
+  color: rgb(255, 179, 194);
+  text-align: center;
+}
+
+nav {
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  background-color: rgb(68, 17, 45);
+  font-family: "Josefin Sans", sans-serif;
+  height: 200vh;
+}
+.container {
+  background-color: black;
+  color: white;
+}
+/*!base css end*/
+
+/*!navbar start*/
+.logo {
+  color: rgb(255, 179, 194);
+  font-size: 30px;
+}
+#first {
+  background-color: aqua;
+}
+.navbar {
+  background-color: rgb(33, 15, 32);
+  height: 60px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+  padding: 0;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-text-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  line-height: 1;
+}
+.toggle {
+  width: 40px;
+  background-color: white;
+  height: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.toggle-icon {
+  color: goldenrod;
+}
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+}
+/*!navbar end*/
+
+/*!sidebar start*/
+.sidebar {
+  background-color: rgb(33, 15, 32);
+  color: white;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  row-gap: 40px;
+  position: fixed;
+}
+.sidebar i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.content-wrapper {
+  margin-left: 50px;
+}
+/*!filter start*/
+.movie-list-filter {
+  margin: 25px 0 20px 50px;
+  padding: 20px;
+}
+.movie-list-filter select {
+  background-color: black;
+  color: white;
+  padding: 7px 0;
+  width: 125px;
+}
+/*!filter end*/
+
+/*!movie list start*/
+.movie-list-container {
+  margin-left: 70px;
+}
+.movie-list {
+  list-style: none;
+  padding: 0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.movie-list-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.movie-item {
+  position: relative;
+}
+
+.movie-item:hover .movie-item-title,
+.movie-item:hover .movie-item-rating,
+.movie-item:hover .movie-item-buttons {
+  opacity: 1;
+}
+.movie-item:hover .movie-item-img {
+  border: 5px solid;
+  border-color: rgb(255, 179, 194);
+  opacity: 0.7;
+}
+
+.movie-item-img {
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.movie-item-title {
+  background-color: rgb(40, 40, 40, 0.4);
+  padding: 0 10px;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+}
+
+.movie-item-buttons {
+  background-color: rgb(40, 40, 40, 0.4);
+  padding: 0 10px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;
+  left: 50px;
+  display: flex;
+  column-gap: 20px;
+  opacity: 0;
+}
+.movie-item-buttons i {
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 20px;
+  transition: 0.5s all ease;
+}
+.movie-item-buttons i:hover {
+  opacity: 1;
+}
+.arrow {
+  width: 100px;
+  display: flex;
+  font-size: 120px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  top: 100px;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+.arrow:hover {
+  opacity: 1;
+}
+@media only screen and(max-width:800px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+/*!movie list end*/
