@@ -4,7 +4,7 @@ const movieLists = document.querySelectorAll(".movie-list");
 arrows.forEach((arrow, i) => {
   let clickCounter = 0;
   const itemNumber = movieLists[i].querySelectorAll("img").length;
-  console.log(itemNumber);
+  console.log(movieLists[i].computedStyleMap().get("transform"));
   arrow.addEventListener("click", function () {
 
     clickCounter++;
